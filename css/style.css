@@ -226,7 +226,9 @@ th {
 
 .filter li {
 	display: inline-block;
-	padding: 5px
+	padding: 5px;
+    top: 50%;
+    left: 50%;
 }
 
 .filter .current {
@@ -267,6 +269,8 @@ th {
     -o-transition: all 0.2s linear, 1s;
     -ms-transition: all 0.2s linear, 1s;
     -transition: all 0.2s linear, 1s;
+    align-items: center;
+	justify-content: center;
 }
 
 .items .item {
