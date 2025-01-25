@@ -418,9 +418,26 @@ th {
 	background: url(../img/loader.gif) center center no-repeat;
 }
 
+/* Set a consistent size for the icons */
+.link-icon {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Maintain aspect ratio */
+}
 
+/* Ensure the list items are inline and spaced properly */
+.items {
+    display: flex;
+    gap: 20px; /* Space between icons */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
 
-
+.items li {
+    display: inline-block;
+    text-align: center;
+}
 
 
 
