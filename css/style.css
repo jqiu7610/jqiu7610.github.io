@@ -418,27 +418,29 @@ th {
 	background: url(../img/loader.gif) center center no-repeat;
 }
 
-/* Set a consistent size for the icons */
+/* Ensure icons maintain aspect ratio and are responsive */
 .link-icon {
-    width: 50px; /* Adjust size as needed */
-    height: 50px; /* Maintain aspect ratio */
+    width: auto; /* Maintain aspect ratio */
+    height: 50px; /* Set a consistent height */
+    max-width: 100%; /* Prevent overflowing */
 }
 
-/* Ensure the list items are inline and spaced properly */
-.items {
-    display: flex;
-    gap: 20px; /* Space between icons */
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    justify-content: center;
+/* Ensure the container adapts to screen size */
+.section .d-flex {
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
-.items li {
-    display: inline-block;
-    text-align: center;
+/* Add spacing between the icons */
+.mx-3 {
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
+/* Ensure proper layout and padding */
+.itemsContainer {
+    text-align: center; /* Center align the icons */
+    margin: 20px 0;
+}
 
 
 
