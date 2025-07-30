@@ -418,10 +418,29 @@ th {
 	background: url(../img/loader.gif) center center no-repeat;
 }
 
+/* Ensure icons maintain aspect ratio and are responsive */
+.link-icon {
+    width: auto; /* Maintain aspect ratio */
+    height: 50px; /* Set a consistent height */
+    max-width: 100%; /* Prevent overflowing */
+}
 
+/* Ensure the container adapts to screen size */
+.section .d-flex {
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
 
+/* Add spacing between the icons */
+.mx-3 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
 
-
+/* Ensure proper layout and padding */
+.itemsContainer {
+    text-align: center; /* Center align the icons */
+    margin: 20px 0;
+}
 
 
 
