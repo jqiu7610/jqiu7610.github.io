@@ -18,7 +18,7 @@ $(document).ready(function() {
 	});
 
 	var typed = new Typed(".typed", {
-		strings: ["Credit Risk.", "Data Science.", "Foodie."],
+		strings: ["Data Scientist.", "Machine Learning.", "Data Engineering.", "Consumer Lending.", "Credit Risk.", "CFPB Compliance.", "Foodie."],
 		typeSpeed: 70,
 		loop: true,
 		startDelay: 1000,
