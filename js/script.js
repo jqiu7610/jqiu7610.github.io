@@ -49,11 +49,10 @@ $(document).ready(function() {
 
 
 	var skillsTopOffset = $(".skillsSection").offset().top;
-	var statsTopOffset = $(".statsSection").offset().top;
-	var countUpFinished = false;
+	var skillsChartRendered = false;
 	$(window).scroll(function() {
 
-		if(window.pageYOffset > skillsTopOffset - $(window).height() + 200) {
+		if(!skillsChartRendered && window.pageYOffset > skillsTopOffset - $(window).height() + 200) {
 
 			$('.chart').easyPieChart({
 		        easing: 'easeInOut',
@@ -67,57 +66,12 @@ $(document).ready(function() {
 		        }
 		    });
 
-
-		}
-
-
-		if(!countUpFinished && window.pageYOffset > statsTopOffset - $(window).height() + 200) {
-			$(".counter").each(function() {
-				var element = $(this);
-				var endVal = parseInt(element.text());
-
-				element.countup(endVal);
-			})
-
-			countUpFinished = true;
+		    skillsChartRendered = true;
 
 		}
 
 
 	});
-
-
-	$("[data-fancybox]").fancybox();
-
-
-	$(".items").isotope({
-		filter: '*',
-		animationOptions: {
-			duration: 1500,
-			easing: 'linear',
-			queue: false
-		}
-	});
-
-	$("#filters a").click(function() {
-
-		$("#filters .current").removeClass("current");
-		$(this).addClass("current");
-
-		var selector = $(this).attr("data-filter");
-
-		$(".items").isotope({
-			filter: selector,
-			animationOptions: {
-				duration: 1500,
-				easing: 'linear',
-				queue: false
-			}
-		});
-
-		return false;
-	});
-
 
 
 	$("#navigation li a").click(function(e) {
