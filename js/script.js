@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	// Typing effect
 	var typedEl = document.querySelector(".typed");
-	var strings = ["Consumer Lending Models.", "Machine Learning Workflows.", "Data Engineering Workflows.", "Credit Risk Solutions.", "CFPB Compliant Tools."];
+	var strings = ["Data Science Workflows.", "Machine Learning Models.", "Data Engineering Pipelines.", "Consumer Lending Models.", "CFPB Compliant Tools."];
 	var strIndex = 0;
 	var charIndex = 0;
 	var deleting = false;
