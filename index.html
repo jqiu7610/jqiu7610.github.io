@@ -5,7 +5,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<link rel="icon" href="img/icons/me.jpeg">
+	<link rel="icon" href="img/icons/me.jpg">
 
 	<title>James Qiu</title>
 
@@ -14,210 +14,250 @@
 
 	<meta property="og:title" content="James Qiu">
 	<meta property="og:description" content="Credit risk data scientist in consumer lending, building CFPB-compliant machine learning models for loan pricing.">
-	<meta property="og:image" content="img/icons/me.jpeg">
+	<meta property="og:image" content="img/icons/me.jpg">
 	<meta property="og:type" content="website">
 	<meta name="twitter:card" content="summary">
 
-	<link rel="stylesheet" type="text/css" href="css/superslides.css">
-	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-
 <body>
 
-	<div class="loader">
-		<div class="inner"></div>
+	<div class="loader" id="loader">
+		<div class="loader-mark">JQ</div>
 	</div>
 
+	<nav id="navigation">
+		<div class="nav-inner">
+			<a class="nav-brand" href="#top">JAMES QIU</a>
 
-	<div id="slides">
-		<div class="overlay"></div>
+			<button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+				<span></span>
+			</button>
 
-		<div class="slides-container">
-		    <img src="img/slide1.jpg" alt="">
-		    <img src="img/slide2.jpg" alt="">
-		    <img src="img/slide3.jpg" alt="">
+			<ul class="nav-links" id="navLinks">
+				<li><a href="#about">About</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#links">Links</a></li>
+				<li><a href="jamesqiuresume2.pdf" class="nav-resume" download>Resume</a></li>
+			</ul>
 		</div>
-
-		<div class="titleMessage">
-			<div class="heading">
-				<p class="main">JAMES QIU</p>
-				<p class="sub typed"></p>
-			</div>
-		</div>
-
-		<nav class="slides-navigation">
-		    <a href="#" class="next"></a>
-		    <a href="#" class="prev"></a>
-		</nav>
-	</div>
-
-
-	<nav id="navigation" class="navbar navbar-expand-lg">
-	  <a class="navbar-brand" href="index.html">JAMES QIU</a>
-
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
-
-	  <div class="collapse navbar-collapse" id="navbarNav">
-	    <ul class="navbar-nav">
-	      <li class="nav-item">
-	        <a class="nav-link" href="#about">About me</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#skills">Skills</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#links">My Links</a>
-	      </li>
-	    </ul>
-	  </div>
 	</nav>
 
+	<header id="top" class="hero">
+		<div class="hero-bg">
+			<img src="img/slide1.jpg" alt="">
+			<div class="hero-overlay"></div>
+		</div>
 
-	<div id="about" class="section">
-		<div class="container">
+		<div class="hero-content">
+			<p class="hero-eyebrow">Credit Risk &middot; Data Science</p>
+			<h1 class="hero-name">James Qiu</h1>
+			<p class="hero-role">I build <span class="typed"></span></p>
+			<div class="hero-actions">
+				<a href="#about" class="btn btn-primary">About Me</a>
+				<a href="jamesqiuresume2.pdf" class="btn btn-ghost" download>Download Resume</a>
+			</div>
+		</div>
 
-			<div class="row">
+		<a href="#about" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+	</header>
 
-				<div class="col-md-12">
-					<h2 id="about" align="center">About me</h2>
+
+	<main>
+
+		<section id="about" class="section">
+			<div class="container">
+				<div class="section-heading">
+					<span class="kicker">Get to know me</span>
+					<h2>About Me</h2>
 				</div>
 
-				<div class="col-md-12">
-					<p align="justify">Hello! Welcome to my personal website! My name is James and I currently work as a credit risk data scientist in the consumer lending industry. I have over 5 years of experience working in credit risk, particularly in building machine learning models that are pivotal for loan pricing and are CFPB compliant. Below is a copy of my resume, feel free to reach out. Always eager to learn new skills and technologies! </p>
-					<p align="center"><a href="jamesqiuresume2.pdf" class="contactButton" style="color:#333;border-color:#333;" download>Download Resume (PDF)</a></p>
+				<div class="about-grid">
+					<div class="about-photo">
+						<img src="img/icons/me.jpg" alt="James Qiu">
+					</div>
+
+					<div class="about-text">
+						<p>Hello! Welcome to my personal website. My name is James and I currently work as a credit risk data scientist in the consumer lending industry. I have over 5 years of experience building machine learning models that are pivotal for loan pricing and CFPB compliant. Below is a copy of my resume &mdash; feel free to reach out. Always eager to learn new skills and technologies!</p>
+
+						<div class="about-actions">
+							<a href="jamesqiuresume2.pdf" class="btn btn-primary" download>Download Resume (PDF)</a>
+							<button type="button" class="btn btn-ghost" id="toggleResume" aria-expanded="false">View Resume Inline</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="resume-embed" id="resumeEmbed" hidden>
 					<embed src="jamesqiuresume2.pdf#toolbar=0" type="application/pdf" width="100%" height="800px" />
 				</div>
-
-					<br>
-
-					<br>
-
-				</div>
-				
 			</div>
-
-		</div>
-
-	</div>
+		</section>
 
 
-
-	<div id="skills" class="skillsSection section">
-
-		<div class="container">
-
-			<div class="row">
-
-				<div class="col-md-12 text-center">
-					<h2>TECHNICAL SKILLS</h2>
-					<p>My proficiency in each skill</p>
+		<section id="skills" class="section skills-section">
+			<div class="container">
+				<div class="section-heading">
+					<span class="kicker">What I bring</span>
+					<h2>Technical Skills</h2>
+					<p class="section-subtitle">My proficiency in each skill</p>
 				</div>
 
-				<div class="owl-carousel owl-theme">
-				    
-				    <div class="skill">
-				    	<span class="chart" data-percent="95">
-				    		<span class="percent" style="color:white">95</span>
-				    		<canvas height="152" width="152"></canvas>
-				    	</span>
-				    	<h4><a href="https://www.python.org/" style="color:#e74c3c;" target="_blank" rel="noopener noreferrer">Python</a></h4>
-				    	<p>Data Science/Programming</p>
-				    </div>
+				<div class="skills-grid">
 
-				    <div class="skill">
-				    	<span class="chart" data-percent="95">
-				    		<span class="percent" style="color:white">95</span>
-				    		<canvas height="152" width="152"></canvas>
-				    	</span>
-				    	<h4><a href="https://www.postgresql.org/" style="color:#e74c3c;" target="_blank" rel="noopener noreferrer">SQL</a></h4>
-				    	<p>I should at least know where to get the data</p>
-				    </div>
+					<div class="skill-card">
+						<div class="skill-top">
+							<h4><a href="https://www.python.org/" target="_blank" rel="noopener noreferrer">Python</a></h4>
+							<span class="skill-percent" data-percent="95">0%</span>
+						</div>
+						<p class="skill-desc">Data Science / Programming</p>
+						<div class="skill-bar"><span class="skill-bar-fill" data-percent="95"></span></div>
+					</div>
 
-				    <div class="skill">
-				    	<span class="chart" data-percent="90">
-				    		<span class="percent" style="color:white">90</span>
-				    		<canvas height="152" width="152"></canvas>
-				    	</span>
-				    	<h4><a href="https://www.microsoft.com/en-us/microsoft-365/free-office-online-for-the-web/" style="color:#e74c3c;" target="_blank" rel="noopener noreferrer">Microsoft Office</a></h4>
-				    	<p>Everyone loves a good powerpoint</p>
-				    </div>
+					<div class="skill-card">
+						<div class="skill-top">
+							<h4><a href="https://www.postgresql.org/" target="_blank" rel="noopener noreferrer">SQL</a></h4>
+							<span class="skill-percent" data-percent="95">0%</span>
+						</div>
+						<p class="skill-desc">I should at least know where to get the data</p>
+						<div class="skill-bar"><span class="skill-bar-fill" data-percent="95"></span></div>
+					</div>
 
-				    <div class="skill">
-				    	<span class="chart" data-percent="95">
-				    		<span class="percent" style="color:white">95</span>
-				    		<canvas height="152" width="152"></canvas>
-				    	</span>
-				    	<h4><a href="https://aws.amazon.com/" style="color:#e74c3c;" target="_blank" rel="noopener noreferrer">AWS</a></h4>
-				    	<p>Utilizing cloud computing to automate tasks and deploy apps</p>
-				    </div>
-
-				    <div class="skill">
-				    	<span class="chart" data-percent="45">
-				    		<span class="percent" style="color:white">45</span>
-				    		<canvas height="152" width="152"></canvas>
-				    	</span>
-				    	<h4><a href="https://drive.google.com/file/d/1Ub04pSTaDjF0EHndyo8_Y3AW38Lt1NE3/view?usp=sharing" style="color:#e74c3c;" target="_blank" rel="noopener noreferrer">Noodle Making</a></h4>
-				    	<p>I see potential in my noodle making skills!</p>
-				    </div>
+					<div class="skill-card">
+						<div class="skill-top">
+							<h4><a href="https://aws.amazon.com/" target="_blank" rel="noopener noreferrer">AWS</a></h4>
+							<span class="skill-percent" data-percent="95">0%</span>
+						</div>
+						<p class="skill-desc">Utilizing cloud computing to automate tasks and deploy apps</p>
+						<p class="skill-desc skill-cert">AWS Certified Solutions Architect &ndash; Associate &middot; AWS Certified Machine Learning &ndash; Specialty</p>
+						<div class="skill-bar"><span class="skill-bar-fill" data-percent="95"></span></div>
+					</div>
 
 				</div>
-
 			</div>
-
-		</div>
-
-	</div>
-
-	<div id="links" class="section">
-	    <div class="container">
-	        <div class="row justify-content-center align-items-center">
-	            <div class="heading">
-	                <h2>MY LINKS</h2>
-	            </div>
-	            <div class="d-flex justify-content-center align-items-center flex-wrap">
-	                <div class="mx-3">
-	                    <a href="https://www.linkedin.com/in/jamesjqiu/" target="_blank" rel="noopener noreferrer">
-	                        <img src="img/links/linkedin.png" alt="LinkedIn" class="link-icon">
-	                    </a>
-	                </div>
-	                <div class="mx-3">
-	                    <a href="https://github.com/jqiu7610" target="_blank" rel="noopener noreferrer">
-	                        <img src="img/links/github.png" alt="GitHub" class="link-icon">
-	                    </a>
-	                </div>
-	            </div>
-	        </div>
-	    </div>
-	</div>
+		</section>
 
 
+		<section id="projects" class="section projects-section">
+			<div class="container">
+				<div class="section-heading">
+					<span class="kicker">What I've built</span>
+					<h2>Projects</h2>
+					<p class="section-subtitle">A few things I've been working on</p>
+				</div>
+
+				<div class="projects-grid">
+
+					<div class="project-card">
+						<div class="project-top">
+							<h4>Loan Origination Model</h4>
+							<span class="repo-badge repo-private"><i class="fas fa-lock"></i> Private / Proprietary</span>
+						</div>
+						<p class="project-desc">CatBoost-based gradient boosted algorithm designed to predict probability of default (PD) and LGD (Loss Given Default) for consumer loans. Originated up to $1.6B in dollar volume to date. CFPB-compliant, explainable, and adheres to fair lending principles.</p>
+						<div class="project-tags">
+							<span class="tag">Python</span>
+							<span class="tag">Machine Learning</span>
+							<span class="tag">API</span>
+							<span class="tag">Experiment Design</span>
+						</div>
+						<span class="project-link is-disabled"><i class="fas fa-lock"></i> Proprietary &mdash; No Public Repo</span>
+					</div>
+
+					<div class="project-card">
+						<div class="project-top">
+							<h4>Image Classification for Wildlife Conservation</h4>
+							<span class="repo-badge repo-private"><i class="fas fa-lock"></i> Private</span>
+						</div>
+						<p class="project-desc">Image recognition for wildlife caught in camera traps. Reduces the time spent on image classification by wildlife conservationists, increasing efficiency for time-sensitive work such as anti-poaching efforts and large area monitoring.</p>
+						<div class="project-tags">
+							<span class="tag">Machine Learning</span>
+							<span class="tag">Neural Networks</span>
+							<span class="tag">Transfer Learning</span>
+							<span class="tag">AWS S3</span>
+						</div>
+						<a href="https://github.com/UC-Berkeley-I-School/207_Su26_project_team_wild_planet" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github"></i> View Repo</a>
+					</div>
+
+					<div class="project-card">
+						<div class="project-top">
+							<h4>Medium Scale Survey Anonymity Experiment</h4>
+							<span class="repo-badge repo-private"><i class="fas fa-lock"></i> Private</span>
+						</div>
+						<p class="project-desc">A medium scale experiment (700 participants) to determine the causal relationship between survey anonymity and response rates / response behaviors.</p>
+						<div class="project-tags">
+							<span class="tag">Causal Inference</span>
+							<span class="tag">Experiment Design</span>
+							<span class="tag">R</span>
+						</div>
+						<a href="https://github.com/UC-Berkeley-I-School/241_misa_experiment" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github"></i> View Repo</a>
+					</div>
+
+					<div class="project-card">
+						<div class="project-top">
+							<h4><a href="https://mqftyciput.us-west-2.awsapprunner.com/" target="_blank" rel="noopener noreferrer">World Happiness Dashboard</a></h4>
+							<span class="repo-badge repo-public"><i class="fas fa-unlock"></i> Public</span>
+						</div>
+						<p class="project-desc">A dashboard that visualizes global happiness data via the global happiness index.</p>
+						<div class="project-tags">
+							<span class="tag">Python</span>
+							<span class="tag">Flask API</span>
+							<span class="tag">AWS S3</span>
+							<span class="tag">AWS AppRunner</span>
+						</div>
+						<a href="https://github.com/jqiu7610/20251205_world_happiness_app" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github"></i> View Repo</a>
+					</div>
+
+					<div class="project-card">
+						<div class="project-top">
+							<h4>Understanding the Effects of Antenna Properties on Antenna Performance</h4>
+							<span class="repo-badge repo-private"><i class="fas fa-lock"></i> Private</span>
+						</div>
+						<p class="project-desc">A closer look at mini bluetooth antennas used in wearable electronics. Examines the relationship between material design and antenna performance.</p>
+						<div class="project-tags">
+							<span class="tag">Python</span>
+							<span class="tag">Regression Analysis</span>
+						</div>
+						<a href="https://github.com/jqiu7610/203_final_project_team_01/tree/master" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github"></i> View Repo</a>
+					</div>
+
+				</div>
+			</div>
+		</section>
 
 
-	<div class="copyrightSection">
-		<div class="col-md-12 text-center">
-			<p>&copy; Copyright James Qiu <span id="year"></span></p>
+		<section id="links" class="section">
+			<div class="container">
+				<div class="section-heading">
+					<span class="kicker">Say hello</span>
+					<h2>My Links</h2>
+				</div>
 
-			<script>
-		  		document.getElementById("year").innerHTML = new Date().getFullYear();
-		  	</script>
+				<div class="links-grid">
+					<a href="https://www.linkedin.com/in/jamesjqiu/" target="_blank" rel="noopener noreferrer" class="link-card">
+						<i class="fab fa-linkedin"></i>
+						<span>LinkedIn</span>
+					</a>
+					<a href="https://github.com/jqiu7610" target="_blank" rel="noopener noreferrer" class="link-card">
+						<i class="fab fa-github"></i>
+						<span>GitHub</span>
+					</a>
+				</div>
+			</div>
+		</section>
 
-		</div>
-	</div>
+	</main>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="js/jquery.superslides.min.js"></script>
-	<script src="js/jquery.easypiechart.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/typed.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<footer class="footer">
+		<p>&copy; James Qiu <span id="year"></span></p>
+	</footer>
+
 	<script src="js/script.js"></script>
 
 </body>
